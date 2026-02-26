@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- Page Specific CSS -->
     {% block page_css %}{% endblock %}
 </head>
+
 <body>
     <!-- HEADER -->
     <header class="header">
@@ -20,12 +22,11 @@
         </div>
 
         <nav class="nav">
-            <!-- <a href="{{ url_for('home') }}">Home</a> -->
             <a href="{{ url_for('about') }}">About Me</a>
-            <a href="{{ url_for('motion_graphic') }}">Motion Graphic</a>
-            <a href="{{ url_for('logo_design') }}">Logo Design</a>
-            <a href="{{ url_for('graphic_work') }}">Graphic Work</a>
-            <a href="{{ url_for('film') }}">Film</a>
+            <a href="{{ url_for('posters') }}">Posters</a>
+            <a href="{{ url_for('films_songs') }}">Films & Songs</a>
+            <a href="{{ url_for('motions') }}">Motions</a>
+            <a href="{{ url_for('work_skills') }}">Work Stills</a>
         </nav>
     </header>
 
@@ -41,4 +42,5 @@
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
+
 </html>

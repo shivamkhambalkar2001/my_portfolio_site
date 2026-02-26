@@ -6,21 +6,21 @@ app = Flask(__name__, template_folder="templates")
 # -------------------------------
 # Image lists for galleries
 # -------------------------------
-logo_images = [
+films_songs_images = [
     "logos/logo1.jpg", "logos/logo2.jpg", "logos/logo3.jpg",
     "logos/logo4.jpg"
 ]
 
-motion_images = [
-    "motion_graphic/motion1.jpg", "motion_graphic/motion2.jpg"
+posters_images = [
+    "posters/motion1.jpg", "posters/motion2.jpg"
 ]
 
-graphic_images = [
-    "graphic_work/graphic1.jpg", "graphic_work/graphic2.jpg"
+motions_images = [
+    "motions/graphic1.jpg", "motions/graphic2.jpg"
 ]
 
-film_images = [
-    "film/film1.jpg", "film/film2.jpg"
+work_skills_images = [
+    "work_skills_images/film1.jpg", "work_skills_images/film2.jpg"
 ]
 
 # -------------------------------
@@ -28,27 +28,27 @@ film_images = [
 # -------------------------------
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("about.html")
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
-@app.route("/motion-graphic")
-def motion_graphic():
-    return render_template("motion_graphic.html", images=motion_images)
+@app.route("/posters")
+def posters():
+    return render_template("posters.html", images=posters_images)
 
-@app.route("/logo-design")
-def logo_design():
-    return render_template("logo_design.html", images=logo_images)
+@app.route("/films_songs")
+def films_songs():
+    return render_template("films_songs.html", images=films_songs_images)
 
-@app.route("/graphic-work")
-def graphic_work():
-    return render_template("graphic_work.html", images=graphic_images)
+@app.route("/motions")
+def motions():
+    return render_template("motions.html", images=motions_images)
 
-@app.route("/film")
-def film():
-    return render_template("film.html", images=film_images)
+@app.route("/work_skills")
+def work_skills():
+    return render_template("work_skills.html", images=work_skills_images)
 
 # -------------------------------
 # Debugging paths
