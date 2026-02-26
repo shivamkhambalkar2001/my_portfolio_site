@@ -1,8 +1,53 @@
 {% extends 'base.html' %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
 {% block content %}
-<section class="about-section">
-    <h2>About Me</h2>
-    <p>Hello! I’m a creative film edito with experience in logo design, motion graphics, and film.</p>
-    <p>I love turning ideas into visual experiences that resonate.</p>
+<section class="about-wrapper">
+
+    <!-- Top Intro -->
+    <div class="about-header">
+        <h1 class="name">ANIL MANDANSUR</h1>
+        <p class="title">
+            Graphic Designer | Motion Graphic Designer | Video Editor<br>
+            Film Maker
+        </p>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="about-container">
+        
+        <!-- Left Image -->
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/3922343e-5b83-42f3-8b67-187ae288b413.jpeg') }}" alt="Profile">
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+            <h3>CAREER OBJECTIVE -</h3>
+            <p>
+                To obtain a creative and challenging position that enables me to gain
+                valuable experience and improve the skills that I gained as part of my
+                Masters course and my experience in my job.
+            </p>
+
+            <div class="contact">
+                <p><strong>Contact</strong></p>
+                <p>shivam@gmail.com</p>
+                <p>+91 7517021997</p>
+            </div>
+
+            <div class="social-links">
+                <a href="#">Behance</a> |
+                <a href="https://www.linkedin.com/in/shivam-khambalkar-87a83823b/">Linkedin</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 {% endblock %}
