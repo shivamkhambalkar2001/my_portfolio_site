@@ -34,6 +34,7 @@ def home():
 def about():
     return render_template("about.html")
 
+
 @app.route("/posters")
 def posters():
     return render_template("posters.html", images=posters_images)
