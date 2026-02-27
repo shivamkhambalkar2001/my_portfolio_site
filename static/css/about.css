@@ -58,8 +58,8 @@
 
 /* Glassmorphism Content Card */
 .about-content {
-    max-width: 520px;
-    background: rgba(255,255,255,0.7);
+    max-width: 620px;
+    background: rgba(203, 201, 201, 0.7);
     padding: 30px;
     border-radius: 18px;
     backdrop-filter: blur(10px);
@@ -87,7 +87,7 @@
 .contact {
     margin-top: 20px;
     padding-top: 15px;
-    border-top: 2px dashed #ddd;
+    border-top: 2px dashed #fc6f6f;
 }
 
 /* Social Links Stylish */
