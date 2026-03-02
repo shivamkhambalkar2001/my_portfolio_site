@@ -34,9 +34,12 @@ body {
 }
 
 .logo {
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
+    border-radius: 8px;   /* rounded square */
     object-fit: cover;
+    background: #5a3b2f;  /* optional brown background like screenshot */
+    padding: 4px;
 }
 
 .site-name {
