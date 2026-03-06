@@ -70,6 +70,9 @@
     .poster-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .poster-info h3 {
+        font-size: 12px;
+    }
 }
 
 
