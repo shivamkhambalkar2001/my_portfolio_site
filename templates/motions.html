@@ -1,10 +1,68 @@
 {% extends 'base.html' %}
-{% block content %}
-<div class="hero">
-    <h1>Shivam </h1>
-    <h2>Motion </h2>
-    <h1>Welcome to My Creative Portfolio</h1>
-    <p>Explore my work in logo design, motion graphics, and film.</p>
-</div>
+
+{% block page_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/motions.css') }}">
 {% endblock %}
 
+{% block content %}
+
+<section class="films-section">
+
+    <h1 class="films-title">Films & Songs</h1>
+
+    <div class="films-grid">
+
+        <div class="film-card">
+            <a href="https://www.youtube.com/watch?v=f9JcjR5PzpE" target="_blank">
+                <img src="https://img.youtube.com/vi/f9JcjR5PzpE/hqdefault.jpg">
+            </a>
+            <h3>Project 1</h3>
+        </div>
+
+        <div class="film-card">
+            <a href="https://www.youtube.com/watch?v=1I48C80wKIM" target="_blank">
+                <img src="https://img.youtube.com/vi/1I48C80wKIM/hqdefault.jpg">
+            </a>
+            <h3>Project 2</h3>
+        </div>
+
+        <div class="film-card">
+            <a href="https://www.youtube.com/watch?v=UKUiPy9zYvI" target="_blank">
+                <img src="https://img.youtube.com/vi/UKUiPy9zYvI/hqdefault.jpg">
+            </a>
+            <h3>Project 3</h3>
+        </div>
+
+        <div class="film-card">
+            <a href="https://www.youtube.com/watch?v=kTxmO0-9d4Q" target="_blank">
+                <img src="https://img.youtube.com/vi/kTxmO0-9d4Q/hqdefault.jpg">
+            </a>
+            <h3>Project 4</h3>
+        </div>
+
+        <div class="film-card">
+            <a href="https://www.youtube.com/watch?v=uVZIA4Fg-GE" target="_blank">
+                <img src="https://img.youtube.com/vi/uVZIA4Fg-GE/hqdefault.jpg">
+            </a>
+            <h3>Project 5</h3>
+        </div>
+
+        <div class="film-card">
+            <a href="https://www.youtube.com/watch?v=yca4Am46FYk" target="_blank">
+                <img src="https://img.youtube.com/vi/yca4Am46FYk/hqdefault.jpg">
+            </a>
+            <h3>Project 6</h3>
+        </div>
+
+        <div class="film-card">
+            <a href="https://www.youtube.com/watch?v=OY6Bab--F_k" target="_blank">
+                <img src="https://img.youtube.com/vi/OY6Bab--F_k/hqdefault.jpg">
+            </a>
+            <h3>Project 7</h3>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
